@@ -94,7 +94,7 @@ nav ul li a:hover {
 
 /* Hero Section Styles */
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../assets/hero-bg.jpg');
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://github.com/bimane1/quinoaplus/blob/1e8287627d8e22ecc053fb87a2cb04a9369e506b/hero-bg.jpg");
     background-size: cover;
     background-position: center;
     color: var(--light-color);
