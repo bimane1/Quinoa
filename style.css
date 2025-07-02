@@ -1,4 +1,4 @@
-/* Global Styles */
+8/* Global Styles */
 :root {
     --primary-color: #4a8c3e;
     --secondary-color: #f8f1e5;
@@ -94,7 +94,7 @@ nav ul li a:hover {
 
 /* Hero Section Styles */
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), img src=https://github.com/bimane1/quinoaplus/blob/372199c575820cc1d5145730dd7bc15b2dad5b55/aboutquinoa.jpg;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), img src=('../assets/hero-bg.jpg');
     background-size: cover;
     background-position: center;
     color: var(--light-color);
