@@ -1,3 +1,309 @@
+
+/* Global Styles */
+:root {
+    --primary-color: #4a8c3e;
+    --secondary-color: #f8f1e5;
+    --text-color: #333;
+    --light-color: #fff;
+    --dark-color: #222;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--primary-color);
+    color: var(--light-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #3a6c30;
+    transform: translateY(-2px);
+}
+
+/* Header Styles */
+header {
+    background: var(--primary-color);
+    color: var(--light-color);
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Navigation Styles */
+nav {
+    background: var(--secondary-color);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+/* Hero Section Styles */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../assets/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--light-color);
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Section Styles */
+.section {
+    padding: 80px 0;
+}
+
+.section:nth-child(even) {
+    background: var(--secondary-color);
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--primary-color);
+    font-size: 2rem;
+}
+
+.section p {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-description {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+    color: var(--text-color);
+}
+
+/* Recipes Section Styles */
+.recipes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.recipe-card {
+    background: var(--light-color);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.recipe-card:hover {
+    transform: translateY(-10px);
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.recipe-card h3 {
+    padding: 15px 20px 0;
+    color: var(--primary-color);
+}
+
+.recipe-card p {
+    padding: 10px 20px;
+    text-align: left;
+    color: var(--text-color);
+}
+
+.btn-recipe {
+    display: inline-block;
+    margin: 0 20px 20px;
+    padding: 8px 15px;
+    background: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.btn-recipe:hover {
+    background: #3a6c30;
+}
+
+/* Marketing Section Styles */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin: 40px 0;
+}
+
+/* تنسيقات البطاقة */
+.product-card {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    background: white;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* العلامة "New" */
+.product-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #e74c3c;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    z-index: 2;
+}
+
+/* الصورة */
+.product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+/* تفاصيل المنتج */
+.product-details {
+    padding: 15px;
+}
+
+.product-rating {
+    margin: 8px 0;
+    color: #f39c12;
+    font-size: 14px;
+}
+
+.review-count {
+    color: #777;
+    margin-left: 5px;
+}
+
+.product-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2ecc71;
+    margin: 10px 0;
+}
+
+.btn-add-to-cart {
+    width: 100%;
+    padding: 10px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-add-to-cart:hover {
+    background: #2980b9;
+}
+
+.marketing-banner {
+    background: linear-gradient(135deg, #4a8c3e, #6bbd5e);
+    color: white;
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.marketing-banner h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.marketing-banner p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.marketing-banner .btn {
+    background: white;
+    color: var(--primary-color);
+}
+
 .marketing-banner .btn:hover {
     background: #f0f0f0;
 }
