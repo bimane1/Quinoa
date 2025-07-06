@@ -465,3 +465,38 @@ footer {
         margin-bottom: 30px;
     }
 }
+html {
+    scroll-behavior: smooth;
+}
+/* توحيد صورة hero */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+/* تحسين زر Add to Cart */
+.btn-add-to-cart {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/* زر معطل */
+.btn:disabled,
+.btn-add-to-cart:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+/* تحسين عرض قسم plant-guide */
+#plant-guide .section {
+    text-align: center;
+}
+#plant-guide h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: var(--primary-color);
+}
