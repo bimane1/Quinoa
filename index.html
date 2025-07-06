@@ -1,129 +1,87 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Quinoa Plus</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 <body>
-  <header>
+  <header class="section">
     <div class="container">
       <h1>Quinoa Plus</h1>
-      <p>Your comprehensive resource for quinoa education, recipes, and farmer support</p>
+      <p>Your resource for quinoa education, recipes, and premium products</p>
     </div>
-  </header>
-
-  <nav>
+  </header>  <section id="about" class="section">
     <div class="container">
-      <ul>
-        <li><a href="#about">About Quinoa</a></li>
-        <li><a href="#benefits">Health Benefits</a></li>
-        <li><a href="#recipes">Recipes</a></li>
-        <li><a href="#marketing">Products</a></li>
-        <li><a href="#identify">Identify</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+      <h2>About Quinoa</h2>
+      <img src="aboutquinoa.png" alt="About Quinoa" />
     </div>
-  </nav>
-
-  <section id="about" class="section">
-    <div class="container">
-      <img src="aboutquinoa.png" alt="About Quinoa">
-    </div>
-  </section>
-
-  <section id="benefits" class="section">
+  </section>  <section id="benefits" class="section">
     <div class="container">
       <h2>Health Benefits</h2>
-      <img src="health.png" alt="Health Benefits">
+      <img src="health.png" alt="Health Benefits" />
     </div>
-  </section>
-
-  <section id="recipes" class="section">
+  </section>  <section id="recipes" class="section">
     <div class="container">
-      <h2>Delicious Quinoa Recipes</h2>
+      <h2>Recipes</h2>
       <div class="recipes-grid">
         <div class="recipe-card">
-          <img src="quinoa-salad.jpg" alt="Quinoa Salad">
-          <h3>Salad</h3>
-          <p>Fresh with cucumbers and tomatoes.</p>
+          <img src="quinoa-salad.jpg" alt="Salad" />
+          <h3>Quinoa Salad</h3>
         </div>
         <div class="recipe-card">
-          <img src="quinoa-bowl.png" alt="Quinoa Bowl">
+          <img src="quinoa-bowl.png" alt="Bowl" />
           <h3>Power Bowl</h3>
-          <p>Avocado, sweet potatoes, and greens.</p>
         </div>
         <div class="recipe-card">
-          <img src="quinoa-breakfast.png" alt="Quinoa Breakfast">
-          <h3>Breakfast Porridge</h3>
-          <p>With almond milk, berries, and honey.</p>
+          <img src="quinoa-breakfast.png" alt="Breakfast" />
+          <h3>Breakfast Quinoa</h3>
         </div>
       </div>
     </div>
-  </section>
-
-  <section id="marketing" class="section">
+  </section>  <section id="products" class="section">
     <div class="container">
-      <h2>Premium Quinoa Products</h2>
+      <h2>Our Products</h2>
       <div class="products-grid">
         <div class="product-card">
-          <img src="quinoa-choko.jpg" alt="Choko">
-          <h3>Quinoa Choko</h3>
-          <p class="product-price">150 dz</p>
+          <img src="quinoa-choko.jpg" alt="Choko Flakes" />
+          <h3>Choko Flakes</h3>
+          <p class="product-price">150 DA</p>
           <button class="btn-add-to-cart">Add to Cart</button>
         </div>
         <div class="product-card">
-          <img src="quinoa-geldouche.jpg" alt="Gel Douche">
-          <h3>Quinoa Gel Douche</h3>
-          <p class="product-price">450 dz</p>
+          <img src="quinoa-geldouche.jpg" alt="Gel Douche" />
+          <h3>Gel Douche</h3>
+          <p class="product-price">450 DA</p>
           <button class="btn-add-to-cart">Add to Cart</button>
         </div>
         <div class="product-card">
-          <img src="quinoa-flakes.png" alt="Flakes">
+          <img src="quinoa-flakes.png" alt="Quinoa Flakes" />
           <h3>Quinoa Flakes</h3>
-          <p class="product-price">250 dz</p>
+          <p class="product-price">250 DA</p>
           <button class="btn-add-to-cart">Add to Cart</button>
         </div>
       </div>
     </div>
-  </section>
-
-  <section id="identify" class="section">
+  </section>  <section id="identify" class="section">
     <div class="container">
-      <h2>Identify Your Quinoa Variety</h2>
-      <div class="plant-image">
-        <img src="identify.jpg" alt="Quinoa Plant">
-      </div>
+      <h2>Identify Your Quinoa Plant</h2>
       <div class="upload-section">
-        <p>Upload or take a picture of your quinoa plant:</p>
-        <input type="file" id="imageInput" accept="image/*" capture="environment">
+        <input type="file" accept="image/*" id="imageInput" />
         <div class="preview">
-          <img id="previewImage" src="" alt="Preview" style="display: none;">
+          <img id="previewImage" alt="Preview" />
         </div>
       </div>
     </div>
-  </section>
-
-  <section id="contact" class="section">
+  </section>  <section id="contact" class="section">
     <div class="container">
       <h2>Contact Us</h2>
       <form id="contactForm">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
         <textarea placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn">Send Message</button>
+        <button type="submit">Send Message</button>
       </form>
     </div>
-  </section>
-
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Quinoa Plus. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
+  </section>  <script src="script.js"></script></body>
 </html>
