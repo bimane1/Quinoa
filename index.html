@@ -98,12 +98,27 @@
   </section>
 
   <section id="identify" class="section">
-    <div class="container">
-      <h2>Identify Your Quinoa Variety</h2>
-      <p>Use the form below to upload a picture of your quinoa plant.</p>
-      <input type="file" accept="image/*" />
+  <div class="container">
+    <h2>Identify Your Quinoa Variety</h2>
+
+    <!-- الصورة الثابتة -->
+    <div class="plant-guide-content">
+      <div class="plant-image">
+        <img src="https://raw.githubusercontent.com/bimane1/quinoaplus/main/identify.jpg" alt="Quinoa Plant">
+      </div>
     </div>
-  </section>
+
+    <!-- واجهة رفع أو تصوير صورة -->
+    <div class="upload-section">
+      <p>You can upload a photo of your quinoa plant or take a picture using your camera:</p>
+
+      <input type="file" accept="image/*" id="imageInput" capture="environment">
+      <div class="preview">
+        <img id="previewImage" src="#" alt="Preview" style="display: none;">
+      </div>
+    </div>
+  </div>
+</section>
 
   <section id="contact" class="section">
     <div class="container">
