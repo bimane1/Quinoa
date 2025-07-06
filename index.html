@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Quinoa Plus - Your Quinoa Resource</title>
+  <title>Quinoa Plus</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
@@ -28,46 +28,37 @@
     </div>
   </nav>
 
-  <section class="hero">
-    <div class="container">
-      <h2>Discover the Power of Quinoa</h2>
-      <p>A complete protein source packed with nutrients for your healthy lifestyle.</p>
-      <a href="#about" class="btn">Learn More</a>
-    </div>
-  </section>
-
   <section id="about" class="section">
     <div class="container">
-      <img src="https://raw.githubusercontent.com/bimane1/Quinoaplus/main/aboutquinoa.png" alt="aboutquinoa" />
+      <img src="aboutquinoa.png" alt="About Quinoa">
     </div>
   </section>
 
   <section id="benefits" class="section">
     <div class="container">
       <h2>Health Benefits</h2>
-      <img src="https://raw.githubusercontent.com/bimane1/Quinoaplus/main/health.png" alt="health" />
+      <img src="health.png" alt="Health Benefits">
     </div>
   </section>
 
   <section id="recipes" class="section">
     <div class="container">
       <h2>Delicious Quinoa Recipes</h2>
-      <p class="section-description">Try these tasty quinoa recipes for breakfast, lunch, and dinner.</p>
       <div class="recipes-grid">
         <div class="recipe-card">
-          <img src="https://raw.githubusercontent.com/bimane1/Quinoaplus/main/quinoa-salad.jpg" alt="Quinoa Salad" />
-          <h3>Mediterranean Quinoa Salad</h3>
-          <p>Fresh quinoa with cucumbers, tomatoes, olives, and feta cheese.</p>
+          <img src="quinoa-salad.jpg" alt="Quinoa Salad">
+          <h3>Salad</h3>
+          <p>Fresh with cucumbers and tomatoes.</p>
         </div>
         <div class="recipe-card">
-          <img src="https://raw.githubusercontent.com/bimane1/Quinoaplus/main/quinoa-bowl.png" alt="Quinoa Bowl" />
-          <h3>Quinoa Power Bowl</h3>
-          <p>Nutritious bowl with quinoa, avocado, sweet potatoes, and greens.</p>
+          <img src="quinoa-bowl.png" alt="Quinoa Bowl">
+          <h3>Power Bowl</h3>
+          <p>Avocado, sweet potatoes, and greens.</p>
         </div>
         <div class="recipe-card">
-          <img src="https://raw.githubusercontent.com/bimane1/Quinoaplus/main/quinoa-breakfast.png" alt="Quinoa Breakfast" />
-          <h3>Quinoa Breakfast Porridge</h3>
-          <p>Warm quinoa with almond milk, berries, and honey.</p>
+          <img src="quinoa-breakfast.png" alt="Quinoa Breakfast">
+          <h3>Breakfast Porridge</h3>
+          <p>With almond milk, berries, and honey.</p>
         </div>
       </div>
     </div>
@@ -76,54 +67,51 @@
   <section id="marketing" class="section">
     <div class="container">
       <h2>Premium Quinoa Products</h2>
-      <p class="section-description">Discover our high-quality quinoa products for your healthy lifestyle</p>
       <div class="products-grid">
         <div class="product-card">
-          <img src="https://raw.githubusercontent.com/bimane1/Quinoaplus/main/quinoa-choko.jpg" alt="Quinoa Choko" />
+          <img src="quinoa-choko.jpg" alt="Choko">
           <h3>Quinoa Choko</h3>
           <p class="product-price">150 dz</p>
+          <button class="btn-add-to-cart">Add to Cart</button>
         </div>
         <div class="product-card">
-          <img src="https://raw.githubusercontent.com/bimane1/Quinoaplus/main/quinoa-geldouche.jpg" alt="Quinoa Gel Douche" />
+          <img src="quinoa-geldouche.jpg" alt="Gel Douche">
           <h3>Quinoa Gel Douche</h3>
           <p class="product-price">450 dz</p>
+          <button class="btn-add-to-cart">Add to Cart</button>
         </div>
         <div class="product-card">
-          <img src="https://raw.githubusercontent.com/bimane1/Quinoaplus/main/quinoa-flakes.png" alt="Quinoa Flakes" />
+          <img src="quinoa-flakes.png" alt="Flakes">
           <h3>Quinoa Flakes</h3>
           <p class="product-price">250 dz</p>
+          <button class="btn-add-to-cart">Add to Cart</button>
         </div>
       </div>
     </div>
   </section>
 
-<section id="identify" class="section">
-  <div class="container">
-    <h2>Identify Your Quinoa Variety</h2>
-
-    <!-- صورة تعريفية -->
-    <div class="plant-image">
-      <img src="https://raw.githubusercontent.com/bimane1/quinoaplus/main/identify.jpg" alt="Quinoa Plant">
-    </div>
-
-    <!-- رفع أو التقاط صورة -->
-    <div class="upload-section">
-      <p>Upload or take a picture of your quinoa plant:</p>
-      <input type="file" id="imageInput" accept="image/*" capture="environment">
-
-      <!-- معاينة الصورة -->
-      <div class="preview">
-        <img id="previewImage" src="" alt="Preview" style="display: none;">
+  <section id="identify" class="section">
+    <div class="container">
+      <h2>Identify Your Quinoa Variety</h2>
+      <div class="plant-image">
+        <img src="identify.jpg" alt="Quinoa Plant">
+      </div>
+      <div class="upload-section">
+        <p>Upload or take a picture of your quinoa plant:</p>
+        <input type="file" id="imageInput" accept="image/*" capture="environment">
+        <div class="preview">
+          <img id="previewImage" src="" alt="Preview" style="display: none;">
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+
   <section id="contact" class="section">
     <div class="container">
       <h2>Contact Us</h2>
       <form id="contactForm">
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
         <textarea placeholder="Your Message" required></textarea>
         <button type="submit" class="btn">Send Message</button>
       </form>
@@ -133,28 +121,9 @@
   <footer>
     <div class="container">
       <p>&copy; 2025 Quinoa Plus. All rights reserved.</p>
-      <div class="social-icons">
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-pinterest"></i></a>
-      </div>
     </div>
   </footer>
 
   <script src="script.js"></script>
-  document.getElementById('imageInput').addEventListener('change', function (e) {
-  const file = e.target.files[0];
-  const preview = document.getElementById('previewImage');
-
-  if (file) {
-    const reader = new FileReader();
-    reader.onload = function (event) {
-      preview.src = event.target.result;
-      preview.style.display = 'block';
-    };
-    reader.readAsDataURL(file);
-  }
-});
 </body>
 </html>
