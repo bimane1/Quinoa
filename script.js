@@ -86,3 +86,18 @@ document.querySelectorAll('.btn-add-to-cart').forEach(button => {
         }, 2000);
     });
 });
+const uploadInput = document.getElementById('uploadInput');
+const identifyImg = document.querySelector('#identify .plant-image img');
+
+if (uploadInput && identifyImg) {
+    uploadInput.addEventListener('change', function (e) {
+        const file = e.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function (event) {
+                identifyImg.src = event.target.result;
+            };
+            reader.readAsDataURL(file);
+        }
+    });
+}
