@@ -500,3 +500,7 @@ html {
     font-size: 2rem;
     color: var(--primary-color);
 }
+.btn-add-to-cart.added {
+    background-color: #2ecc71 !important;
+    color: white;
+}
