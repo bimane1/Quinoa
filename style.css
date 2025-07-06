@@ -5,57 +5,117 @@ body {
   background-color: #f9f9f9;
   color: #333;
 }
+
 .section {
   padding: 60px 20px;
   text-align: center;
 }
+
 .container {
   max-width: 1000px;
   margin: 0 auto;
 }
+
 h1, h2 {
   color: #4a8c3e;
 }
+
 img {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
 }
+
+/* الشبكات: وصفات ومنتجات */
 .recipes-grid, .products-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
   margin-top: 30px;
 }
+
 .recipe-card, .product-card {
   background: #fff;
   padding: 15px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
+
+/* السعر والزر */
 .product-price {
   color: green;
   font-weight: bold;
   margin: 10px 0;
 }
+
 .btn-add-to-cart {
   background: #4a8c3e;
   color: white;
   border: none;
   padding: 10px;
   border-radius: 5px;
+  width: 100%;
+  font-size: 1rem;
+  cursor: pointer;
 }
+
+/* قسم التعرف على النبتة */
 .upload-section {
-  margin-top: 20px;
+  margin-top: 30px;
 }
+
 .upload-section input[type="file"] {
   padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  max-width: 100%;
+  margin-top: 10px;
 }
+
 .preview img {
   margin-top: 20px;
-  max-width: 300px;
+  max-width: 100%;
   border-radius: 8px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  display: none;
+}
+
+/* نموذج الاتصال */
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #4a8c3e;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* التوافق مع الهاتف */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .recipes-grid, .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .preview img {
+    max-width: 90%;
+  }
 }
