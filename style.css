@@ -19,10 +19,7 @@ body {
   line-height: 1.6;
   color: var(--text-color);
   background-color: var(--light-color);
-  background-image: url('hero-bg.jpg'); /* تأكد من رفع الصورة في نفس المجلد */
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  scroll-behavior: smooth;
 }
 
 /* Layout Containers */
@@ -31,17 +28,15 @@ body {
   max-width: 1200px;
   margin: auto;
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 10px;
 }
 
-/* Header */
+/* Header with Background */
 header {
-  background: var(--primary-color);
+  background: url('hero-bg.jpg') center/cover no-repeat;
   color: var(--light-color);
   text-align: center;
-  padding: 40px 20px;
-  border-radius: 0 0 10px 10px;
+  padding: 100px 20px;
+  position: relative;
 }
 header h1 {
   font-size: 2.8rem;
@@ -185,10 +180,22 @@ header p {
   background: #3a6c30;
 }
 
+/* Footer (Optional improvement) */
+footer {
+  text-align: center;
+  padding: 30px;
+  background: var(--secondary-color);
+  color: var(--text-color);
+  font-size: 0.9rem;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   header h1 {
     font-size: 2rem;
+  }
+  header p {
+    font-size: 1rem;
   }
   .section {
     padding: 40px 0;
